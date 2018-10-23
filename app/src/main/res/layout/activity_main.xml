@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mediaplayer_resmi"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/sarki_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sark_mp3"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/mediaplayer_resmi"/>
+
+    <LinearLayout
+        android:id="@+id/sarki_bilgisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/sarki_ad">
+
+        <TextView
+            android:id="@+id/baslanganc_saniyesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_weight="0.1"
+            android:text="@string/baslanganc_saniyesi"/>
+
+        <SeekBar
+            android:id="@+id/sarki_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"/>
+
+        <TextView
+            android:id="@+id/bitis_saniyesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bitis_saniyesi"
+            android:layout_weight="0.1"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_media_player_buttonlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/sarki_bilgisi">
+
+        <Button
+            android:id="@+id/geri_sarma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/geri_sarma"/>
+
+        <Button
+            android:id="@+id/oynatma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oynat"/>
+
+        <Button
+            android:id="@+id/ileri_sarma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ileri_sarma"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

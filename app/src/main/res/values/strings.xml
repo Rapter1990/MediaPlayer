@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MediaPlayer</string>
+
+    <string name="basa_alma"><![CDATA[<]]></string>
+    <string name="geri_sarma"><![CDATA[<<]]></string>
+    <string name="ileri_sarma"><![CDATA[>>]]></string>
+    <string name="durdurma">||</string>
+    <string name="oynat"><![CDATA[>]]></string>
+    <string name="sark_mp3">Şarkı.mp3</string>
+    <string name="baslanganc_saniyesi">Başlangıç Saniyesi</string>
+    <string name="bitis_saniyesi">Bitiş Saniyesi</string>
+
+</resources>
